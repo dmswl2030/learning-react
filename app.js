@@ -1,32 +1,14 @@
-// 함수란?
-// 특정 기능을 모아둔 집합체
-// 또는 특정 계산된 값을 재사용하기 위해
+// 화살표 함수
+// ES6에서 생긴 기능으로 일반 함수 작성법보다 축약해서 사용할 수 있다.
+// 익명함수로 사용하려면 변수에 할당하여 사용해야한다.
 
-// 함수 선언 방법
-// 매개변수(parameter)는 함수 호출시 값을 받아오는 변수명이라고 생각하면된다.
-function 함수명(매개변수) {
-    //... 함수 실행시 작동할 코드 내용
-  }
-  
-  // 함수에 대한 예제
-  // function greeting(username) {
-  //   console.log(`${username}님 안녕하세요.`);
-  // }
-  
-  const app = document.getElementById("app");
-  
-  function greeting(username) {
-    console.log(`${username}님 안녕하세요.`);
-    // 함수내의 값이 어딘가에 할당이 되려면 return 적어줘야 한다.
-    return `${username}님 안녕하세요.`;
-  }
-  
-  app.innerText = greeting("이은지");
-  
-  function sum(a, b) {
-    // 주의 사항으로 return 아래 줄에는 코드를 적지 않는다.
+// 사용 방법
+// {}를 사용하지 않으면 return을 생략해도 된다.
+
+// 일반함수
+function sum(a, b) {
     return a + b;
   }
   
-  const result = sum(10, 10);
-  console.log(result);
+  // 화살표 함수
+  const sum = (a, b) => a + b;

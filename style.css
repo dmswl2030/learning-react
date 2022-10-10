@@ -1,0 +1,13 @@
+#app {
+    display: flex;
+    justify-content: space-between;
+}
+#app > div {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
